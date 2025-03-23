@@ -132,7 +132,7 @@ export default function Timer() {
           </span>
         </div>
         
-        <div className="text-6xl font-bold text-gray-800 my-4">
+        <div className="text-6xl font-bold text-black my-4">
           {formatTime(timeLeft)}
         </div>
         
@@ -140,33 +140,33 @@ export default function Timer() {
           <button 
             onClick={startTimer}
             disabled={isRunning && !isPaused}
-            className={`px-6 py-3 rounded text-white text-lg ${isRunning && !isPaused ? 'bg-gray-400 cursor-not-allowed' : 'bg-red-600 hover:bg-red-700'}`}
+            className={`px-6 py-3 rounded text-black text-lg ${isRunning && !isPaused ? 'bg-gray-400 cursor-not-allowed' : 'bg-red-600 hover:bg-red-700'}`}
           >
             {isPaused ? 'Resume' : 'Start'}
           </button>
           <button 
             onClick={pauseTimer}
             disabled={!isRunning || isPaused}
-            className={`px-6 py-3 rounded text-white text-lg ${!isRunning || isPaused ? 'bg-gray-400 cursor-not-allowed' : 'bg-red-600 hover:bg-red-700'}`}
+            className={`px-6 py-3 rounded text-black text-lg ${!isRunning || isPaused ? 'bg-gray-400 cursor-not-allowed' : 'bg-red-600 hover:bg-red-700'}`}
           >
             Pause
           </button>
           <button 
             onClick={resetTimer}
-            className="px-6 py-3 rounded bg-red-600 text-white text-lg hover:bg-red-700"
+            className="px-6 py-3 rounded bg-red-600 text-black text-lg hover:bg-red-700"
           >
             Reset
           </button>
         </div>
         
-        <div className="text-lg mb-6">
+        <div className="text-lg mb-6 text-black">
           Completed Pomodoros: <span className="font-bold text-green-600">{completedSessions}</span>
         </div>
         
         <div className="mt-8 pt-6 border-t border-gray-200">
-          <h3 className="font-bold text-lg mb-4">Settings (minutes)</h3>
+          <h3 className="font-bold text-lg mb-4 text-black">Settings (minutes)</h3>
           
-          <div className="flex justify-between items-center my-2">
+          <div className="flex justify-between items-center my-2 text-black">
             <label htmlFor="work-time">Work Time:</label>
             <input 
               type="number" 
@@ -179,7 +179,7 @@ export default function Timer() {
             />
           </div>
           
-          <div className="flex justify-between items-center my-2">
+          <div className="flex justify-between items-center my-2 text-black">
             <label htmlFor="short-break">Short Break:</label>
             <input 
               type="number" 
@@ -192,7 +192,7 @@ export default function Timer() {
             />
           </div>
           
-          <div className="flex justify-between items-center my-2">
+          <div className="flex justify-between items-center my-2 text-black">
             <label htmlFor="long-break">Long Break:</label>
             <input 
               type="number" 
@@ -205,7 +205,7 @@ export default function Timer() {
             />
           </div>
           
-          <div className="flex justify-between items-center my-2">
+          <div className="flex justify-between items-center my-2 text-black">
             <label htmlFor="sessions-until-long-break">Sessions until Long Break:</label>
             <input 
               type="number" 
