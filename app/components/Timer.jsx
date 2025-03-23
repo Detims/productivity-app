@@ -1,5 +1,4 @@
 import { useState, useEffect, useRef } from 'react';
-import { assets } from '@/assets/assets';
 
 export default function Timer() {
   // Timer state
@@ -223,7 +222,7 @@ export default function Timer() {
         {/* Hidden audio element */}
         <audio 
           ref={alarmSound}
-          src={assets.alarm} 
+          src={"/alarm_emergencymeeting.mp3"} 
         />
       </div>
     </div>
