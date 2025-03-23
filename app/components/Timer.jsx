@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from "react"
-import Countdown from "../Countdown"
+import Countdown from "./Countdown"
 
 function Timer() {
     const {
