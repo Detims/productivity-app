@@ -1,9 +1,18 @@
 from flask import Flask
+import datetime
+
+x = datetime.datetime.now()
+
 app = Flask(__name__)
 
-@app.route('/api/hello', methods=['GET'])
-def hello_world():
-    return 'Hello World'
+@app.route('/data')
+def get_time():
+    return {
+        'Name':'gook',
+        'Age':'21',
+        'Date':x,
+        'programming':'nothing'
+    }
 
 if __name__ == '__main__':
-    app.run(port=5328)
+    app.run(debug=True)
