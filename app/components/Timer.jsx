@@ -118,7 +118,7 @@ export default function Timer() {
   };
   
   return (
-    <div className="flex justify-center items-center min-h-screen bg-gray-100">
+    <div className="flex justify-center items-center min-h-screen bg-gray-100"> {/*Background*/}
       <div className="text-center bg-white rounded-lg p-8 shadow-md w-full max-w-md">
         <h1 className="text-2xl font-bold text-red-600 mb-6">Pomodoro Study Timer</h1>
         
